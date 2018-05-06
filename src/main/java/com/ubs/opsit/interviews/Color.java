@@ -1,5 +1,6 @@
 package com.ubs.opsit.interviews;
 
+
 public enum Color {
 
     RED("R"),

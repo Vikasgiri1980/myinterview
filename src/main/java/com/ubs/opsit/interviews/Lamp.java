@@ -1,5 +1,6 @@
 package com.ubs.opsit.interviews;
 
+
 public class Lamp {
 
     private Color color;
