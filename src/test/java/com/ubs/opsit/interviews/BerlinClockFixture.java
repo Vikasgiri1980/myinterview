@@ -14,6 +14,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class BerlinClockFixture {
 
     private TimeConverter berlinClock;
+    
+   
     private String theTime;
 
     @Test
@@ -31,6 +33,7 @@ public class BerlinClockFixture {
 
     @Then("the clock should look like $")
     public void thenTheClockShouldLookLike(String theExpectedBerlinClockOutput) {
+    	berlinClock = new TimeConverterImpl();
         assertThat(berlinClock.convertTime(theTime)).isEqualTo(theExpectedBerlinClockOutput);
     }
 }
